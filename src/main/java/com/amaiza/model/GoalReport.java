@@ -1,4 +1,4 @@
-package com.pluralsight.model;
+package com.amaiza.model;
 
 public class GoalReport {
     private int goalMinutes;

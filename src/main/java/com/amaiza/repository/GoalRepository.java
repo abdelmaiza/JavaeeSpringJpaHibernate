@@ -1,7 +1,7 @@
-package com.pluralsight.repository;
+package com.amaiza.repository;
 
-import com.pluralsight.model.Goal;
-import com.pluralsight.model.GoalReport;
+import com.amaiza.model.Goal;
+import com.amaiza.model.GoalReport;
 
 import java.util.List;
 

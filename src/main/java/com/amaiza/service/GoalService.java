@@ -1,8 +1,7 @@
-package com.pluralsight.service;
+package com.amaiza.service;
 
-import com.pluralsight.model.Goal;
-import com.pluralsight.model.GoalReport;
-import org.springframework.stereotype.Service;
+import com.amaiza.model.Goal;
+import com.amaiza.model.GoalReport;
 
 import java.util.List;
 

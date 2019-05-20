@@ -1,13 +1,13 @@
-package com.pluralsight.repository;
+package com.amaiza.repository;
 
-import com.pluralsight.model.Exercise;
+import com.amaiza.model.Exercise;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 @Repository("exerciceRepository")
-public class ExerciceReositoryImpl implements ExerciceReository {
+public class ExerciceRepositoryImpl implements ExerciceRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
