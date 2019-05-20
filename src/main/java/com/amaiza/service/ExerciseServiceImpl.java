@@ -1,15 +1,22 @@
-package com.pluralsight.service;
+package com.amaiza.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.amaiza.model.Exercise;
+import com.amaiza.repository.ExerciceRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pluralsight.model.Activity;
+import com.amaiza.model.Activity;
+import org.springframework.transaction.annotation.Transactional;
 
 
 @Service("exerciseService")
 public class ExerciseServiceImpl implements ExerciseService {
+
+	@Autowired
+	private ExerciceRepository exerciceReository;
 
 	public List<Activity> findAllActivities() {
 		
@@ -29,5 +36,11 @@ public class ExerciseServiceImpl implements ExerciseService {
 		
 		return activities;
 	}
-	
+
+	@Transactional
+	public Exercise save(Exercise exercise) {
+		exercise = exerciceReository.save(exercise);
+		return exercise;
+	}
+
 }
